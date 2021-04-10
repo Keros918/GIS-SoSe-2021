@@ -1,0 +1,181 @@
+body{
+    background-image: url("bg.png");
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 800px;
+    margin: auto;
+    color:brown;
+}
+
+h1{
+    color:maroon;
+    text-align: center;
+
+}
+
+h3{
+    color:firebrick;
+    text-align:center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar {
+    position:fixed;
+    top: 0px;
+    right: 230px;
+    background-color: black;
+    padding: 10px;
+}
+
+.navbar a{
+    color: blanchedalmond;
+}
+
+#Portfolio {
+    color:brown;
+}
+
+#MeinePerson{
+    color:brown;
+}
+
+#Kontakt{
+    color:brown;
+}
+
+.navbar a:hover{
+    background-color: blanchedalmond;
+    color:brown;
+}
+
+video{
+    max-width: 800px;
+    height: auto;
+}
+
+img{
+    max-width: 800px;
+    height: auto;
+}
+
+.video{
+    position: relative;
+    text-align: center;
+    color: blanchedalmond;
+}
+
+.overlay{
+    float:left;
+    position:absolute;
+    top: -30px;
+    left: 10px;
+}
+
+.Kontakt{
+    margin: 50px auto auto auto;
+    padding: 10px;
+    border: 2px solid darkred;
+    background-color:beige;
+}
+
+.Kontakt thead {
+    text-transform: uppercase;
+    font-size: 20px;
+    color:crimson
+}
+
+#Tab1{
+    padding: 5px 0px 0px 0px;
+}
+
+#Tab2{
+    padding: 5px 0px 5px 0px;
+}
+
+.Nachricht{
+    margin: 0px 0px 100px 0px;
+}
+
+.Nachricht p{
+    text-shadow: 0px 0px 5px black;
+    width: 300px;
+    color:ghostwhite;
+    padding: 5px 0px 5px 5px;
+    background-color: lightgray;
+}
+
+#Nachricht{
+    width: 500px;
+    padding: 5px 0px 75px 5px;
+}
+
+#Absenden{
+    width: fit-content;
+    padding: 5px;
+}
+
+#schreiben{
+    color:firebrick;
+    text-shadow: none;
+    background-color:transparent;
+    font-size: 20px;
+    width:fit-content;
+    margin: 75px 0px 0px 0px;
+}
+
+.Nachricht img{
+    float:right;
+    width:275px;
+    height: auto;
+}
+
+.Steckbrief{
+    width:fit-content;
+    margin:auto;
+    border: 2px solid darkred;
+}
+
+.Steckbrief table{
+    margin:auto;
+}
+
+.Steckbrief td{
+    padding: 10px 25px 25px 25px;
+}
+
+#Website{
+    padding: 15px;
+    color: brown;
+    background:lightgray;
+    float:right;
+    border: 2px solid brown;
+    font-size: 18px;
+    font-weight:bold;
+}
+
+#Schwarzwald{
+    font-size: 20px;
+    font-weight:bold;
+}
+
+#HFU{
+    color:brown;
+    text-decoration:underline brown;
+}
+
+.social-media img{
+    width:30px;
+    height:30px;
+}
+
+.social-media a:hover{
+    opacity: 0.5;
+}
+
+.social-media li{
+    padding: 0px 0px 0px 8px;
+    float:right;
+    display:inline;
+}
