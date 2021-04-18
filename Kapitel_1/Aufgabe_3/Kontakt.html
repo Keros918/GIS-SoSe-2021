@@ -15,7 +15,7 @@
         <h1 id="MeinPortfolio">Mein Portfolio</h1>
         <nav class="navbar">
             <a href="index.html">Portfolio</a>
-            <a href="MeinePerson.html">Meine Person</a>
+            <a href="MeinePerson.html">Über mich</a>
             <a id="Kontakt" href="Kontakt.html">Kontakt</a>
         </nav>
         <ul class="social-media">
@@ -52,11 +52,13 @@
         <div class="Nachricht">
             <img src="Ich.jpg" alt="Ein Bild von mir.">
             <p id="schreiben">Möchten sie mir eine Nachricht schreiben?</p>
-            <p>Vorname</p>
-            <p>Nachname</p>
-            <p>Email</p>
-            <p id="Nachricht">Nachricht</p>
-            <p id="Absenden">Absenden</p>
+            <form>
+                <input type="text" name="Vorname" placeholder="Vorname "> 
+                <input type="text" name="Nachname" placeholder="Nachname">
+                <input type="email" name="Email" placeholder="Email">
+                <textarea name="Nachricht" placeholder="Nachricht"></textarea>  
+                <input type="submit" name="Absenden">
+            </form>
         </div>
         <video src="Dubrovnik.mp4" controls loop></video>
         <br>
