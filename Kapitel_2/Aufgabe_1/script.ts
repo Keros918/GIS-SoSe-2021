@@ -158,6 +158,8 @@ namespace a5 {
     }
 }
 
+
+// Aufgabe 6
 namespace a6 {
     // a)
     let str: string = "#";
@@ -209,7 +211,7 @@ namespace a6 {
         return brett;
     }
     // e)
-    console.log(schach2(9));
+    console.log(schach2(18));
     function schach2(size: number): string {
         let brett: string = "";
         let counter: number = size * size + size;

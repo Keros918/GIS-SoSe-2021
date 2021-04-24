@@ -143,6 +143,7 @@ var a5;
         }
     }
 })(a5 || (a5 = {}));
+// Aufgabe 6
 var a6;
 (function (a6) {
     // a)
@@ -198,7 +199,7 @@ var a6;
         return brett;
     }
     // e)
-    console.log(schach2(9));
+    console.log(schach2(18));
     function schach2(size) {
         let brett = "";
         let counter = size * size + size;
