@@ -31,7 +31,7 @@ var Kapitelaufgabe;
         }
     }
     // Aufgabe 3
-    // b)
+    // b) & c)
     let c1 = document.createElement("img");
     c1.setAttribute("src", "bg.png");
     let headOne = new Part("head", c1);

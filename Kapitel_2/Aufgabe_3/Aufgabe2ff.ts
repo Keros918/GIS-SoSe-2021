@@ -1,7 +1,5 @@
-
-
-    // Aufgabe 2
-    // a)
+// Aufgabe 2
+// a)
 namespace Kapitelaufgabe {
     export let heads: Part[] = [];
     export let bodys: Part[] = [];
@@ -13,7 +11,7 @@ namespace Kapitelaufgabe {
         width: string;
         height: string;
         color: string;
-
+    
         constructor(_className: string, _image: HTMLElement) {
             this.className = _className;
             this.image = _image;
@@ -22,7 +20,7 @@ namespace Kapitelaufgabe {
             this.color = _image.style.color;
             this.addPart();
         }
-
+    
         addPart(): void {
             if (this.className == "head") {
                 heads.push(this);
@@ -44,7 +42,7 @@ namespace Kapitelaufgabe {
     }
 
     // Aufgabe 3
-    // b)
+    // b) & c)
     let c1: HTMLImageElement = document.createElement("img");
     c1.setAttribute("src", "bg.png");
 
