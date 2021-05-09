@@ -55,8 +55,14 @@ namespace Kapitelaufgabe {
 
     let headTwo: Part = new Part("head", c2);
 
+    let c3: HTMLImageElement = document.createElement("img");
+    c3.setAttribute("src", "Instagram.png");
+
+    let headThree: Part = new Part("head", c3);
+
     heads.push(headOne);
     heads.push(headTwo);
+    heads.push(headThree);
 
     let counter: number = 0;
 
