@@ -37,12 +37,19 @@ var Aufgabe3;
     addRect.style.height = "50px";
     reset.style.width = "100px";
     reset.style.height = "50px";
-    addRect.innerText = "Rechteck hinzufügen";
+    addRect.innerText = "add Rect";
     reset.innerText = "Reset";
     document.body.appendChild(addRect);
     document.body.appendChild(reset);
     addRect.addEventListener("click", handleRect);
     reset.addEventListener("click", handleReset);
+    let build = document.createElement("a");
+    build.style.backgroundColor = "lightgray";
+    build.innerText = "Build your own Picture";
+    build.setAttribute("href", "chooseHead.html");
+    build.style.padding = "20px";
+    build.style.marginLeft = "20px";
+    document.body.appendChild(build);
     function handleRect() {
         let rect = new Rechteck("rectNeu");
         rect.buildRect();
@@ -54,4 +61,4 @@ var Aufgabe3;
         }
     }
 })(Aufgabe3 || (Aufgabe3 = {}));
-//# sourceMappingURL=script.js.map
+//# sourceMappingURL=Aufgabe1.js.map
