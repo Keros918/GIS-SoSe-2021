@@ -27,6 +27,7 @@ namespace Aufgabe3 {
             this.rechteck.style.left = this.posX + "px";
             this.rechteck.style.borderStyle = "solid";
             this.rechteck.className = this.classname;
+            this.rechteck.style.zIndex = "-1";
             document.body.appendChild(this.rechteck);
         }
     }
