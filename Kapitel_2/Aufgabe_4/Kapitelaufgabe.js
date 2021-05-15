@@ -58,14 +58,14 @@ var Kapitelaufgabe;
     let content;
     let picture;
     showThis();
-    if ((window.location.href == "http://127.0.0.1:5500/Kapitel_2/Aufgabe_4/chooseBody.html")
-        || (window.location.href == "http://127.0.0.1:5500/Kapitel_2/Aufgabe_4/chooseLeg.html")) {
+    if ((window.location.href == "https://keros918.github.io/GIS-SoSe-2021/Kapitel_2/Aufgabe_4/chooseBody.html")
+        || (window.location.href == "https://keros918.github.io/GIS-SoSe-2021/Kapitel_2/Aufgabe_4/chooseLeg.html")) {
         loadThis();
         let textHead = document.createElement("div");
         textHead.innerText = "Your chosen Head.";
         textHead.appendChild(picture.head.image);
         chosen.appendChild(textHead);
-        if (window.location.href == "http://127.0.0.1:5500/Kapitel_2/Aufgabe_4/chooseLeg.html") {
+        if (window.location.href == "https://keros918.github.io/GIS-SoSe-2021/Kapitel_2/Aufgabe_4/chooseLeg.html") {
             textHead.style.float = "left";
             let textBody = document.createElement("div");
             textBody.innerText = "Your chosen Body";
@@ -75,19 +75,19 @@ var Kapitelaufgabe;
         }
     }
     function showThis() {
-        if (window.location.href == "http://127.0.0.1:5500/Kapitel_2/Aufgabe_4/chooseHead.html") {
+        if (window.location.href == "https://keros918.github.io/GIS-SoSe-2021/Kapitel_2/Aufgabe_4/chooseHead.html") {
             content = Kapitelaufgabe.heads[counter].image;
             show.appendChild(content);
         }
-        else if (window.location.href == "http://127.0.0.1:5500/Kapitel_2/Aufgabe_4/chooseBody.html") {
+        else if (window.location.href == "https://keros918.github.io/GIS-SoSe-2021/Kapitel_2/Aufgabe_4/chooseBody.html") {
             content = Kapitelaufgabe.bodys[counter].image;
             show.appendChild(content);
         }
-        else if (window.location.href == "http://127.0.0.1:5500/Kapitel_2/Aufgabe_4/chooseLeg.html") {
+        else if (window.location.href == "https://keros918.github.io/GIS-SoSe-2021/Kapitel_2/Aufgabe_4/chooseLeg.html") {
             content = Kapitelaufgabe.legs[counter].image;
             show.appendChild(content);
         }
-        else if (window.location.href == "http://127.0.0.1:5500/Kapitel_2/Aufgabe_4/finale_picture.html") {
+        else if (window.location.href == "https://keros918.github.io/GIS-SoSe-2021/Kapitel_2/Aufgabe_4/finale_picture.html") {
             loadThis();
             show.appendChild(picture.head.image);
             show.appendChild(picture.body.image);
@@ -95,7 +95,7 @@ var Kapitelaufgabe;
         }
     }
     function showNext() {
-        if (window.location.href == "http://127.0.0.1:5500/Kapitel_2/Aufgabe_4/chooseHead.html") {
+        if (window.location.href == "https://keros918.github.io/GIS-SoSe-2021/Kapitel_2/Aufgabe_4/chooseHead.html") {
             if (counter + 1 == Kapitelaufgabe.heads.length) {
                 counter = 0;
             }
@@ -103,7 +103,7 @@ var Kapitelaufgabe;
                 counter++;
             }
         }
-        else if (window.location.href == "http://127.0.0.1:5500/Kapitel_2/Aufgabe_4/chooseBody.html") {
+        else if (window.location.href == "https://keros918.github.io/GIS-SoSe-2021/Kapitel_2/Aufgabe_4/chooseBody.html") {
             if (counter + 1 == Kapitelaufgabe.bodys.length) {
                 counter = 0;
             }
@@ -111,7 +111,7 @@ var Kapitelaufgabe;
                 counter++;
             }
         }
-        else if (window.location.href == "http://127.0.0.1:5500/Kapitel_2/Aufgabe_4/chooseLeg.html") {
+        else if (window.location.href == "https://keros918.github.io/GIS-SoSe-2021/Kapitel_2/Aufgabe_4/chooseLeg.html") {
             if (counter + 1 == Kapitelaufgabe.legs.length) {
                 counter = 0;
             }
@@ -123,18 +123,18 @@ var Kapitelaufgabe;
         showThis();
     }
     function chooseThis() {
-        if (window.location.href == "http://127.0.0.1:5500/Kapitel_2/Aufgabe_4/chooseHead.html") {
+        if (window.location.href == "https://keros918.github.io/GIS-SoSe-2021/Kapitel_2/Aufgabe_4/chooseHead.html") {
             Kapitelaufgabe.pic.head = Kapitelaufgabe.heads[counter];
             saveThis();
             window.location.href = "chooseBody.html";
         }
-        else if (window.location.href == "http://127.0.0.1:5500/Kapitel_2/Aufgabe_4/chooseBody.html") {
+        else if (window.location.href == "https://keros918.github.io/GIS-SoSe-2021/Kapitel_2/Aufgabe_4/chooseBody.html") {
             Kapitelaufgabe.pic.head = picture.head;
             Kapitelaufgabe.pic.body = Kapitelaufgabe.bodys[counter];
             saveThis();
             window.location.href = "chooseLeg.html";
         }
-        else if (window.location.href == "http://127.0.0.1:5500/Kapitel_2/Aufgabe_4/chooseLeg.html") {
+        else if (window.location.href == "https://keros918.github.io/GIS-SoSe-2021/Kapitel_2/Aufgabe_4/chooseLeg.html") {
             Kapitelaufgabe.pic.head = picture.head;
             Kapitelaufgabe.pic.body = picture.body;
             Kapitelaufgabe.pic.leg = Kapitelaufgabe.legs[counter];
@@ -147,13 +147,13 @@ var Kapitelaufgabe;
         let newHead = document.createElement("img");
         newHead.setAttribute("src", picture.head.imagesrc);
         picture.head.image = newHead;
-        if ((window.location.href == "http://127.0.0.1:5500/Kapitel_2/Aufgabe_4/chooseLeg.html") ||
-            (window.location.href == "http://127.0.0.1:5500/Kapitel_2/Aufgabe_4/finale_picture.html")) {
+        if ((window.location.href == "https://keros918.github.io/GIS-SoSe-2021/Kapitel_2/Aufgabe_4/chooseLeg.html") ||
+            (window.location.href == "https://keros918.github.io/GIS-SoSe-2021/Kapitel_2/Aufgabe_4/finale_picture.html")) {
             let newBody = document.createElement("img");
             newBody.setAttribute("src", picture.body.imagesrc);
             picture.body.image = newBody;
         }
-        if (window.location.href == "http://127.0.0.1:5500/Kapitel_2/Aufgabe_4/finale_picture.html") {
+        if (window.location.href == "https://keros918.github.io/GIS-SoSe-2021/Kapitel_2/Aufgabe_4/finale_picture.html") {
             let newLeg = document.createElement("img");
             newLeg.setAttribute("src", picture.leg.imagesrc);
             picture.leg.image = newLeg;
