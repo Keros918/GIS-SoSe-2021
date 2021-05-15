@@ -1,13 +1,20 @@
 "use strict";
 // Aufgabe 2
 // a)
-var Kapitelaufgabe;
-(function (Kapitelaufgabe) {
-    Kapitelaufgabe.heads = [];
-    Kapitelaufgabe.bodys = [];
-    Kapitelaufgabe.legs = [];
+/*
+namespace Kapitelaufgabe {
+    export let heads: Part[] = [];
+    export let bodys: Part[] = [];
+    export let legs: Part[] = [];
+
     class Part {
-        constructor(_className, _image) {
+        className: string;
+        image: HTMLElement;
+        width: string;
+        height: string;
+        color: string;
+    
+        constructor(_className: string, _image: HTMLElement) {
             this.className = _className;
             this.image = _image;
             this.width = _image.style.width;
@@ -15,62 +22,83 @@ var Kapitelaufgabe;
             this.color = _image.style.color;
             this.addPart();
         }
-        addPart() {
+    
+        addPart(): void {
             if (this.className == "head") {
-                Kapitelaufgabe.heads.push(this);
-            }
-            else if (this.className == "body") {
-                Kapitelaufgabe.bodys.push(this);
-            }
-            else if (this.className == "leg") {
-                Kapitelaufgabe.legs.push(this);
-            }
-            else {
+                heads.push(this);
+            } else if (this.className == "body") {
+                bodys.push(this);
+            } else if (this.className == "leg") {
+                legs.push(this);
+            } else {
                 console.error("Error404 \n Classname not found");
             }
         }
     }
+
+    // b)
+    export interface Picture {
+        head: Part;
+        body: Part;
+        leg: Part;
+    }
+
     // Aufgabe 3
     // b) & c)
-    let c1 = document.createElement("img");
+    let c1: HTMLImageElement = document.createElement("img");
     c1.setAttribute("src", "bg.png");
-    let headOne = new Part("head", c1);
-    let c2 = document.createElement("img");
+
+    let headOne: Part = new Part("head", c1);
+
+    let c2: HTMLImageElement = document.createElement("img");
     c2.setAttribute("src", "twitter.png");
-    let headTwo = new Part("head", c2);
-    let c3 = document.createElement("img");
+
+    let headTwo: Part = new Part("head", c2);
+
+    let c3: HTMLImageElement = document.createElement("img");
     c3.setAttribute("src", "Instagram.png");
-    let headThree = new Part("head", c3);
-    Kapitelaufgabe.heads.push(headOne);
-    Kapitelaufgabe.heads.push(headTwo);
-    Kapitelaufgabe.heads.push(headThree);
-    let counter = 0;
-    let show = document.createElement("div");
+
+    let headThree: Part = new Part("head", c3);
+
+    heads.push(headOne);
+    heads.push(headTwo);
+    heads.push(headThree);
+
+    let counter: number = 0;
+
+    let show: HTMLDivElement = document.createElement("div");
     show.id = "show";
     document.body.appendChild(show);
-    let next = document.getElementById("next");
+
+    let next: HTMLElement = document.getElementById("next");
     next.addEventListener("click", showNext);
-    let choose = document.getElementById("this");
+
+    let choose: HTMLElement = document.getElementById("this");
     choose.addEventListener("click", chooseThis);
-    let content;
+
+    let content: HTMLElement;
+
     showThis();
-    function showThis() {
-        content = Kapitelaufgabe.heads[counter].image;
+
+    function showThis(): void {
+        content = heads[counter].image;
         show.appendChild(content);
     }
-    function showNext() {
-        if (counter + 1 == Kapitelaufgabe.heads.length) {
+
+    function showNext(): void {
+        if (counter + 1 == heads.length) {
             counter = 0;
-        }
-        else {
+        } else {
             counter++;
         }
         content.remove();
         showThis();
     }
-    function chooseThis() {
-        Kapitelaufgabe.pic.head = Kapitelaufgabe.heads[counter];
-        console.log(Kapitelaufgabe.pic);
+
+    function chooseThis(): void {
+        pic.head = heads[counter];
+        console.log(pic);
     }
-})(Kapitelaufgabe || (Kapitelaufgabe = {}));
+}
+*/ 
 //# sourceMappingURL=Aufgabe2ff.js.map

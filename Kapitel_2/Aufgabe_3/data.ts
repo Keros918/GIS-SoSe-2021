@@ -1,4 +1,5 @@
 // c)
+/*
 namespace Kapitelaufgabe {    
     export let pic: Picture = {
         head: null,
@@ -6,3 +7,4 @@ namespace Kapitelaufgabe {
         leg: null
     };
 }
+*/

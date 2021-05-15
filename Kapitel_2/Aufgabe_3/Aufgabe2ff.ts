@@ -1,5 +1,6 @@
 // Aufgabe 2
 // a)
+/*
 namespace Kapitelaufgabe {
     export let heads: Part[] = [];
     export let bodys: Part[] = [];
@@ -98,3 +99,4 @@ namespace Kapitelaufgabe {
         console.log(pic);
     }
 }
+*/
