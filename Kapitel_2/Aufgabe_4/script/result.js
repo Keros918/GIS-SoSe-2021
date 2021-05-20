@@ -15,5 +15,6 @@ var Kapitelaufgabe;
         img.src = _imageSrc;
         return img;
     }
+    localStorage.clear();
 })(Kapitelaufgabe || (Kapitelaufgabe = {}));
 //# sourceMappingURL=result.js.map

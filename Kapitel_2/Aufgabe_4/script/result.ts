@@ -16,4 +16,6 @@ namespace Kapitelaufgabe {
         img.src = _imageSrc;
         return img;
     }
+
+    localStorage.clear();
 }
