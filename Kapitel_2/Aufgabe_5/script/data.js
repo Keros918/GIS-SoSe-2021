@@ -1,7 +1,7 @@
 "use strict";
-var Kapitelaufgabe2_4;
-(function (Kapitelaufgabe2_4) {
-    Kapitelaufgabe2_4.partsJSON = `
+var Kapitelaufgabe2_5;
+(function (Kapitelaufgabe2_5) {
+    Kapitelaufgabe2_5.partsJSON = `
         {
             "heads": [
                 {
@@ -38,5 +38,5 @@ var Kapitelaufgabe2_4;
             ]
         }
     `;
-})(Kapitelaufgabe2_4 || (Kapitelaufgabe2_4 = {}));
+})(Kapitelaufgabe2_5 || (Kapitelaufgabe2_5 = {}));
 //# sourceMappingURL=data.js.map

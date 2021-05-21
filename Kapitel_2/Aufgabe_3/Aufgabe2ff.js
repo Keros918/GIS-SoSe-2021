@@ -1,20 +1,13 @@
 "use strict";
 // Aufgabe 2
 // a)
-/*
-namespace Kapitelaufgabe {
-    export let heads: Part[] = [];
-    export let bodys: Part[] = [];
-    export let legs: Part[] = [];
-
+var Aufgabe2;
+(function (Aufgabe2) {
+    Aufgabe2.heads = [];
+    Aufgabe2.bodys = [];
+    Aufgabe2.legs = [];
     class Part {
-        className: string;
-        image: HTMLElement;
-        width: string;
-        height: string;
-        color: string;
-    
-        constructor(_className: string, _image: HTMLElement) {
+        constructor(_className, _image) {
             this.className = _className;
             this.image = _image;
             this.width = _image.style.width;
@@ -22,83 +15,62 @@ namespace Kapitelaufgabe {
             this.color = _image.style.color;
             this.addPart();
         }
-    
-        addPart(): void {
+        addPart() {
             if (this.className == "head") {
-                heads.push(this);
-            } else if (this.className == "body") {
-                bodys.push(this);
-            } else if (this.className == "leg") {
-                legs.push(this);
-            } else {
+                Aufgabe2.heads.push(this);
+            }
+            else if (this.className == "body") {
+                Aufgabe2.bodys.push(this);
+            }
+            else if (this.className == "leg") {
+                Aufgabe2.legs.push(this);
+            }
+            else {
                 console.error("Error404 \n Classname not found");
             }
         }
     }
-
-    // b)
-    export interface Picture {
-        head: Part;
-        body: Part;
-        leg: Part;
-    }
-
     // Aufgabe 3
     // b) & c)
-    let c1: HTMLImageElement = document.createElement("img");
+    let c1 = document.createElement("img");
     c1.setAttribute("src", "bg.png");
-
-    let headOne: Part = new Part("head", c1);
-
-    let c2: HTMLImageElement = document.createElement("img");
+    let headOne = new Part("head", c1);
+    let c2 = document.createElement("img");
     c2.setAttribute("src", "twitter.png");
-
-    let headTwo: Part = new Part("head", c2);
-
-    let c3: HTMLImageElement = document.createElement("img");
+    let headTwo = new Part("head", c2);
+    let c3 = document.createElement("img");
     c3.setAttribute("src", "Instagram.png");
-
-    let headThree: Part = new Part("head", c3);
-
-    heads.push(headOne);
-    heads.push(headTwo);
-    heads.push(headThree);
-
-    let counter: number = 0;
-
-    let show: HTMLDivElement = document.createElement("div");
+    let headThree = new Part("head", c3);
+    Aufgabe2.heads.push(headOne);
+    Aufgabe2.heads.push(headTwo);
+    Aufgabe2.heads.push(headThree);
+    let counter = 0;
+    let show = document.createElement("div");
     show.id = "show";
     document.body.appendChild(show);
-
-    let next: HTMLElement = document.getElementById("next");
+    let next = document.getElementById("next");
     next.addEventListener("click", showNext);
-
-    let choose: HTMLElement = document.getElementById("this");
+    let choose = document.getElementById("this");
     choose.addEventListener("click", chooseThis);
-
-    let content: HTMLElement;
-
+    let content;
     showThis();
-
-    function showThis(): void {
-        content = heads[counter].image;
+    function showThis() {
+        content = Aufgabe2.heads[counter].image;
         show.appendChild(content);
     }
-
-    function showNext(): void {
-        if (counter + 1 == heads.length) {
+    function showNext() {
+        if (counter + 1 == Aufgabe2.heads.length) {
             counter = 0;
-        } else {
+        }
+        else {
             counter++;
         }
         content.remove();
         showThis();
     }
-
-    function chooseThis(): void {
-        pic.head = heads[counter];
-        console.log(pic);
+    function chooseThis() {
+        Aufgabe2.pic.head = Aufgabe2.heads[counter];
+        console.log(Aufgabe2.pic);
     }
-}
-*/ 
+})(Aufgabe2 || (Aufgabe2 = {}));
 //# sourceMappingURL=Aufgabe2ff.js.map

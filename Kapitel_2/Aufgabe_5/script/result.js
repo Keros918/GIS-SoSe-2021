@@ -1,6 +1,6 @@
 "use strict";
-var Kapitelaufgabe2_4;
-(function (Kapitelaufgabe2_4) {
+var Kapitelaufgabe2_5;
+(function (Kapitelaufgabe2_5) {
     let pic = {};
     let storedPic = localStorage.getItem("pic");
     if (storedPic) {
@@ -16,5 +16,5 @@ var Kapitelaufgabe2_4;
         return img;
     }
     localStorage.clear();
-})(Kapitelaufgabe2_4 || (Kapitelaufgabe2_4 = {}));
+})(Kapitelaufgabe2_5 || (Kapitelaufgabe2_5 = {}));
 //# sourceMappingURL=result.js.map

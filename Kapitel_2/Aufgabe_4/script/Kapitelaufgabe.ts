@@ -1,4 +1,4 @@
-namespace Kapitelaufgabe {
+namespace Kapitelaufgabe2_4 {
 
     let selected: HTMLDivElement = document.createElement("div");
     selected.id = "chosen";

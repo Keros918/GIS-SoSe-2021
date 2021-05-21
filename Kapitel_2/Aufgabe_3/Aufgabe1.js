@@ -1,17 +1,9 @@
 "use strict";
-/*
-namespace Aufgabe3 {
+var Aufgabe3;
+(function (Aufgabe3) {
     // Aufgabe 1
     class Rechteck {
-        rechteck: HTMLDivElement;
-        random: number;
-        posX: number;
-        posY: number;
-        width: number;
-        height: number;
-        classname: string;
-
-        constructor(_classname: string) {
+        constructor(_classname) {
             this.rechteck = document.createElement("div");
             this.random = Math.random() * 10;
             this.posX = this.random * 150;
@@ -20,8 +12,7 @@ namespace Aufgabe3 {
             this.height = Math.random() * 200;
             this.classname = _classname;
         }
-
-        buildRect(): void {
+        buildRect() {
             this.rechteck.style.position = "absolute";
             this.rechteck.style.width = this.width + "px";
             this.rechteck.style.height = this.height + "px";
@@ -33,18 +24,16 @@ namespace Aufgabe3 {
             document.body.appendChild(this.rechteck);
         }
     }
-
-    let anzahl: number = Math.random() * 10;
+    let anzahl = Math.random() * 10;
     anzahl = Math.round(anzahl);
-    let rectangles: Rechteck[] = [];
+    let rectangles = [];
     while (anzahl > 0) {
         rectangles.push(new Rechteck("rect"));
         rectangles[rectangles.length - 1].buildRect();
         anzahl--;
     }
-
-    let addRect: HTMLButtonElement = document.createElement("button");
-    let reset: HTMLButtonElement = document.createElement("button");
+    let addRect = document.createElement("button");
+    let reset = document.createElement("button");
     addRect.style.width = "100px";
     addRect.style.height = "50px";
     reset.style.width = "100px";
@@ -55,26 +44,22 @@ namespace Aufgabe3 {
     document.body.appendChild(reset);
     addRect.addEventListener("click", handleRect);
     reset.addEventListener("click", handleReset);
-
-    let build: HTMLAnchorElement = document.createElement("a");
+    let build = document.createElement("a");
     build.style.backgroundColor = "lightgray";
     build.innerText = "Build your own Picture";
     build.setAttribute("href", "chooseHead.html");
     build.style.padding = "20px";
     build.style.marginLeft = "20px";
     document.body.appendChild(build);
-
-    function handleRect(): void {
-        let rect: Rechteck = new Rechteck("rectNeu");
+    function handleRect() {
+        let rect = new Rechteck("rectNeu");
         rect.buildRect();
     }
-
-    function handleReset(): void {
-        let remove: HTMLCollection = document.getElementsByClassName("rectNeu");
+    function handleReset() {
+        let remove = document.getElementsByClassName("rectNeu");
         while (remove.length > 0) {
             remove.item(0).remove();
         }
     }
-}
-*/ 
+})(Aufgabe3 || (Aufgabe3 = {}));
 //# sourceMappingURL=Aufgabe1.js.map

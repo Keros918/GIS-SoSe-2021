@@ -1,7 +1,22 @@
-"use strict";
-var Kapitelaufgabe2_4;
-(function (Kapitelaufgabe2_4) {
-    Kapitelaufgabe2_4.partsJSON = `
+namespace Kapitelaufgabe2_5 {
+    export interface Part {
+        imageSrc: string;
+    }
+
+    export interface Parts {
+        heads: Part[];
+        bodys: Part[];
+        legs: Part[];
+    }
+
+    export interface Picture {
+        head?: Part;
+        body?: Part;
+        leg?: Part;
+    }
+
+    export let partsJSON: string =
+        `
         {
             "heads": [
                 {
@@ -38,5 +53,4 @@ var Kapitelaufgabe2_4;
             ]
         }
     `;
-})(Kapitelaufgabe2_4 || (Kapitelaufgabe2_4 = {}));
-//# sourceMappingURL=data.js.map
+}

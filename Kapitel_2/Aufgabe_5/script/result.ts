@@ -1,4 +1,4 @@
-namespace Kapitelaufgabe2_4 {
+namespace Kapitelaufgabe2_5 {
     let pic: Picture = {};
     let storedPic: string = localStorage.getItem("pic");
     if (storedPic) {

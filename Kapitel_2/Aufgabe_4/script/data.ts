@@ -1,4 +1,4 @@
-namespace Kapitelaufgabe {
+namespace Kapitelaufgabe2_4 {
     export interface Part {
         imageSrc: string;
     }

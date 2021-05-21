@@ -1,6 +1,6 @@
 "use strict";
-var Kapitelaufgabe2_4;
-(function (Kapitelaufgabe2_4) {
+var Kapitelaufgabe2_5;
+(function (Kapitelaufgabe2_5) {
     let selected = document.createElement("div");
     selected.id = "chosen";
     document.body.appendChild(selected);
@@ -15,7 +15,7 @@ var Kapitelaufgabe2_4;
     let content;
     let parts;
     function revertJSON() {
-        parts = JSON.parse(Kapitelaufgabe2_4.partsJSON);
+        parts = JSON.parse(Kapitelaufgabe2_5.partsJSON);
     }
     revertJSON();
     let pic = {};
@@ -98,5 +98,5 @@ var Kapitelaufgabe2_4;
                 break;
         }
     }
-})(Kapitelaufgabe2_4 || (Kapitelaufgabe2_4 = {}));
+})(Kapitelaufgabe2_5 || (Kapitelaufgabe2_5 = {}));
 //# sourceMappingURL=Kapitelaufgabe.js.map

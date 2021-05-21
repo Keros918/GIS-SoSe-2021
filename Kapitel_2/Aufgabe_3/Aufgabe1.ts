@@ -1,4 +1,3 @@
-/*
 namespace Aufgabe3 {
     // Aufgabe 1
     class Rechteck {
@@ -75,4 +74,3 @@ namespace Aufgabe3 {
         }
     }
 }
-*/
