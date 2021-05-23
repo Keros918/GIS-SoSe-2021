@@ -53,3 +53,13 @@ img {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+#ServerResponse {
+    color:white;
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: 0px 0px 10px black;
+    margin-top:20px;
+    width:fit-content;
+    padding: 30px;
+}

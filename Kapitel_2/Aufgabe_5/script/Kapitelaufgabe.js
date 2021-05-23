@@ -14,10 +14,15 @@ var Kapitelaufgabe2_5;
     let counter = 0;
     let content;
     let parts;
-    function revertJSON() {
-        parts = JSON.parse(Kapitelaufgabe2_5.partsJSON);
+    // b)
+    async function revertJSON(_url) {
+        let response = await fetch(_url);
+        Kapitelaufgabe2_5.partsJSON = await response.json();
+        parts = JSON.parse(JSON.stringify(Kapitelaufgabe2_5.partsJSON));
+        selectCurrentPart();
+        showThis();
     }
-    revertJSON();
+    revertJSON("./script/data.json");
     let pic = {};
     let storedPic = localStorage.getItem("pic");
     if (storedPic) {
@@ -25,21 +30,22 @@ var Kapitelaufgabe2_5;
     }
     let currentParts = [];
     let currentPart = "";
-    switch (document.title) {
-        case "Choose Head":
-            currentPart = "head";
-            currentParts = parts.heads;
-            break;
-        case "Choose Body":
-            currentPart = "body";
-            currentParts = parts.bodys;
-            break;
-        case "Choose Leg":
-            currentPart = "leg";
-            currentParts = parts.legs;
-            break;
+    function selectCurrentPart() {
+        switch (document.title) {
+            case "Choose Head":
+                currentPart = "head";
+                currentParts = parts.heads;
+                break;
+            case "Choose Body":
+                currentPart = "body";
+                currentParts = parts.bodys;
+                break;
+            case "Choose Leg":
+                currentPart = "leg";
+                currentParts = parts.legs;
+                break;
+        }
     }
-    showThis();
     function showThis() {
         content = createImage(currentParts[counter].imageSrc);
         show.appendChild(content);

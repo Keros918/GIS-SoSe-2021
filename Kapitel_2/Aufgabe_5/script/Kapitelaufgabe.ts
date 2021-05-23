@@ -1,5 +1,23 @@
 namespace Kapitelaufgabe2_5 {
 
+    export interface Part {
+        imageSrc: string;
+    }
+
+    export interface Parts {
+        heads: Part[];
+        bodys: Part[];
+        legs: Part[];
+    }
+
+    export interface Picture {
+        head?: Part;
+        body?: Part;
+        leg?: Part;
+    }
+
+    export let partsJSON: string;
+
     let selected: HTMLDivElement = document.createElement("div");
     selected.id = "chosen";
     document.body.appendChild(selected);
@@ -20,10 +38,16 @@ namespace Kapitelaufgabe2_5 {
 
     let parts: Parts;
 
-    function revertJSON(): void {
-        parts = JSON.parse(partsJSON);
+    // b)
+    async function revertJSON(_url: RequestInfo): Promise<void> {
+        let response: Response = await fetch(_url);
+        partsJSON = await response.json();
+        parts = JSON.parse(JSON.stringify(partsJSON));
+        selectCurrentPart();
+        showThis();
     }
-    revertJSON();
+
+    revertJSON("./script/data.json");
 
     let pic: Picture = {};
 
@@ -35,22 +59,22 @@ namespace Kapitelaufgabe2_5 {
     let currentParts: Part[] = [];
     let currentPart: string = "";
 
-    switch (document.title) {
-        case "Choose Head":
-            currentPart = "head";
-            currentParts = parts.heads;
-            break;
-        case "Choose Body":
-            currentPart = "body";
-            currentParts = parts.bodys;
-            break;
-        case "Choose Leg":
-            currentPart = "leg";
-            currentParts = parts.legs;
-            break;
+    function selectCurrentPart(): void {
+        switch (document.title) {
+            case "Choose Head":
+                currentPart = "head";
+                currentParts = parts.heads;
+                break;
+            case "Choose Body":
+                currentPart = "body";
+                currentParts = parts.bodys;
+                break;
+            case "Choose Leg":
+                currentPart = "leg";
+                currentParts = parts.legs;
+                break;
+        }
     }
-
-    showThis();
 
     function showThis(): void {
         content = createImage(currentParts[counter].imageSrc);
@@ -81,7 +105,7 @@ namespace Kapitelaufgabe2_5 {
         content.remove();
         showThis();
     }
-    
+
     function createImage(_imageSrc: string): HTMLImageElement {
         let img: HTMLImageElement = document.createElement("img");
         img.src = _imageSrc;
