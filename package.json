@@ -1,0 +1,21 @@
+{
+  "name": "leonhaasgissose21",
+  "version": "1.0.0",
+  "description": "A",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start": "node Kapitel_2/Aufgabe_1/script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Keros918/GIS-SoSe-2021.git"
+  },
+  "author": "Leon Haas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Keros918/GIS-SoSe-2021/issues"
+  },
+  "homepage": "https://github.com/Keros918/GIS-SoSe-2021#readme"
+}
