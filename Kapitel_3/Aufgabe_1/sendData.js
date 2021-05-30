@@ -4,7 +4,7 @@ var Aufgabe3_1;
     let submit = document.getElementById("submit");
     submit.addEventListener("click", sendData);
     async function sendData() {
-        let url = "http://127.0.0.1:8100";
+        let url = "https://leonhaasgissose21.herokuapp.com/";
         let formData = new FormData(document.forms[0]);
         let query = new URLSearchParams(formData);
         url = url + "?" + query.toString();

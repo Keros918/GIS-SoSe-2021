@@ -15,7 +15,6 @@ var P_3_1Server;
     function handleListen() {
         console.log("Listening"); // "Listening" wird in der Konsole ausgegeben
     }
-    //https://leonhaasgissose21.herokuapp.com/
     function handleRequest(_request, _response) {
         console.log("I hear voices!"); // "I hear voices!" wird in der Konsole ausgegeben
         _response.setHeader("content-type", "text/html; charset=utf-8"); // Der Header vom ServerResponse mit dem Name "content-type" wird festgelegt
