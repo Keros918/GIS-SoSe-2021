@@ -9,6 +9,7 @@ namespace Aufgabe3_1 {
         let query: URLSearchParams = new URLSearchParams(<any>formData);
         url = url + "?" + query.toString();
         let response: Response = await fetch(url);
-        console.log(response);
+        let reply: HTMLElement = document.getElementById("response");
+        reply.innerHTML = await response.text();
     }
 }

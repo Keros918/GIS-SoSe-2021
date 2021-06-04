@@ -21,6 +21,6 @@ export namespace P_3_1Server {
         _response.setHeader("Access-Control-Allow-Origin", "*");        // Der Header vom ServerResponse mit dem Name "Access-Control-Allow-Origin" wird festgelegt
         _response.write(_request.url);      // Der Query/Path string wird auf der Seite angezeigt
         console.log(_request.url);
-        _response.end();        // Sendet gepufferte Ausgaben an den Client und beendet die Ausführung der Seite
+        _response.end("test");        // Sendet gepufferte Ausgaben an den Client und beendet die Ausführung der Seite
     }
 }

@@ -9,7 +9,8 @@ var Aufgabe3_1;
         let query = new URLSearchParams(formData);
         url = url + "?" + query.toString();
         let response = await fetch(url);
-        console.log(response);
+        let reply = document.getElementById("response");
+        reply.innerHTML = await response.text();
     }
 })(Aufgabe3_1 || (Aufgabe3_1 = {}));
 //# sourceMappingURL=sendData.js.map
