@@ -6,6 +6,7 @@ var Aufgabe3_1;
     async function sendData() {
         let url = "https://leonhaasgissose21.herokuapp.com/";
         let formData = new FormData(document.forms[0]);
+        // tslint:disable-next-line: no-any
         let query = new URLSearchParams(formData);
         url = url + "?" + query.toString();
         let response = await fetch(url);
