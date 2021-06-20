@@ -4,6 +4,8 @@
   "description": "A",
   "main": "index.js",
   "dependencies": {
+    "@types/mongodb": "^3.6.18",
+    "mongodb": "^3.6.9",
     "url-parse": "^1.5.1",
     "whatwg-url": "^8.5.0"
   },
@@ -11,7 +13,7 @@
     "@types/node": "^15.12.1"
   },
   "scripts": {
-    "start": "node Kapitel_3/Aufgabe_2/server.js"
+    "start": "node Kapitel_3/Aufgabe_4/server.js"
   },
   "repository": {
     "type": "git",

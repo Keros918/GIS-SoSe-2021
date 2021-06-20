@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="sendData.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    <h1>Work in Progress!</h1>
+    <form>
+        <label for="fname">Vorname: </label>
+        <input type="text" id="fname" name="fname">
+        <label for="lname">Nachname: </label>
+        <input type="text" id="lname" name="lname">
+        <label for="matrikel">Matrikelnummer: </label>
+        <input type="text" id="matrikel" name="matrikel">
+        <button type="button" id="submit">Absenden</button>
+        <button type="button" id="get">Anfragen</button>
+    </form>
+    <div id="ServerResponse">
+
+    </div>
 </body>
 </html>
