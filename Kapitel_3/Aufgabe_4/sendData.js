@@ -13,8 +13,8 @@ var Aufgabe3_4;
         respDIV.innerHTML = JSON.stringify(showResp);
     }
     async function sendForm() {
-        let response = await communicate(url + "store");
-        console.log(response);
+        await communicate(url + "store");
+        console.log("Stored Successfully");
     }
     async function communicate(_url) {
         let formData = new FormData(document.forms[0]);

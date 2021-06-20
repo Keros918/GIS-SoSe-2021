@@ -22,8 +22,8 @@ namespace Aufgabe3_4 {
     }
 
     async function sendForm(): Promise<void> {
-        let response: Response = await communicate(url + "store");
-        console.log(response);
+        await communicate(url + "store");
+        console.log("Stored Successfully");
     }
 
     async function communicate(_url: string): Promise<Response> {
