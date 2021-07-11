@@ -28,6 +28,7 @@ namespace Prüfung {
     switchSites();
 
     async function switchSites(): Promise<void> {
+        console.log(window.location.pathname);
         switch (window.location.pathname) {
             case "/GIS-SoSe-2021/Pruefung/AllRecipes.html":
                 recipes = await getRecipes();
