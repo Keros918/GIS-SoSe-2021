@@ -87,6 +87,10 @@ h1{
     position: relative;
 }
 
+.recipe p {
+    max-height: 40px;
+}
+
 #favIcon {
     width: 300px;
     height: 40px;
