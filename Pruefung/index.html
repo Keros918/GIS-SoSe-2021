@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="client/account.js" defer></script>
+    <title>Login</title>
+</head>
+<body>
+    <h1 id="title">Melde dich mit deinem Account an!</h1>
+    <form class="login">
+        <label for="username">Benutzername: </label>
+        <input type="text" id="username" name="username">
+        <label for="password">Passwort: </label>
+        <input type="password" id="password" name="password">
+        <div class="buttons">
+            <button type="button" id="login">Login</button>
+            <button type="button" id="createAcc">Erstelle einen Account</button>
+        </div>
+    </form>
+    <div id="serverMessage">
+        <p id="serverMessageText"></p>
+    </div>
+</body>
+</html>

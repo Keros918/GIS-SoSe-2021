@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="client/script.js" defer></script>
+    <title>MeineRezepte</title>
+</head>
+<body>
+    <h1 id="title">Meine Rezepte!</h1>
+    <div class="nav">
+        <ul id="navbar">
+            <li><a href="AllRecipes.html">Alle Rezepte</a></li>
+            <li><a href="MeineRezepte.html">Meine Rezepte</a></li>
+            <li><a href="MeineFavoriten.html">Meine Favoriten</a></li>
+        </ul>
+    </div>
+    <div id="createRecipe">
+        <form>
+            <h1>Erstelle ein Rezept</h1>
+            <label for="title">Rezeptname:</label>
+            <input type="text" name="title">
+            <div id="createIngr">
+                <label for="ingredients">Zutaten:</label>
+                <input type="text" name="ingredients">
+            </div>
+            <button type="button" id="add">+</button>
+            <label for="instructions">Anleitung:</label>
+            <input type="text" name="instructions">
+            <button type="button" id="createButton">Erstellen</button>
+        </form>
+    </div>
+    <div id="recipes">
+        
+    </div>
+</body>
+</html>
