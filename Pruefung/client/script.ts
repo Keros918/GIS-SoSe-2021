@@ -24,11 +24,10 @@ namespace Prüfung {
     if (sessionStorage.getItem("User") == undefined) {
         window.location.assign("./index.html");
     }
-
+    console.log(window.location.pathname);
     switchSites();
 
     async function switchSites(): Promise<void> {
-        console.log(window.location.pathname);
         switch (window.location.pathname) {
             case "/GIS-SoSe-2021/Pruefung/AllRecipes.html":
                 recipes = await getRecipes();
