@@ -29,18 +29,18 @@ namespace Prüfung {
 
     async function switchSites(): Promise<void> {
         switch (window.location.pathname) {
-            case "/Pruefung/AllRecipes.html":
+            case "/GIS-SoSe-2021/Pruefung/AllRecipes.html":
                 recipes = await getRecipes();
                 fillSite();
                 break;
-            case "/Pruefung/viewRecipe.html":
+            case "/GIS-SoSe-2021/Pruefung/viewRecipe.html":
                 singleRecipe();
                 break;
-            case "/Pruefung/MeineRezepte.html":
+            case "/GIS-SoSe-2021/Pruefung/MeineRezepte.html":
                 recipes = await getRecipes();
                 fillSite();
                 break;
-            case "/Pruefung/MeineFavoriten.html":
+            case "/GIS-SoSe-2021/Pruefung/MeineFavoriten.html":
                 recipes = await getRecipes();
                 fillSite();
                 break;
@@ -50,10 +50,10 @@ namespace Prüfung {
     function fillSite(): void {
         for (let index in recipes) {
             switch (window.location.pathname) {
-                case "/Pruefung/AllRecipes.html":
+                case "/GIS-SoSe-2021/Pruefung/AllRecipes.html":
                     createElements(index);
                     break;
-                case "/Pruefung/MeineRezepte.html":
+                case "/GIS-SoSe-2021/Pruefung/MeineRezepte.html":
                     if (user.recipes.includes(recipes[index]._id)) {
                         createElements(index);
                     }
@@ -61,7 +61,7 @@ namespace Prüfung {
                         alt();
                     }
                     break;
-                case "/Pruefung/MeineFavoriten.html":
+                case "/GIS-SoSe-2021/Pruefung/MeineFavoriten.html":
                     if (user.favorites.includes(recipes[index]._id)) {
                         createElements(index);
                     }
@@ -89,7 +89,7 @@ namespace Prüfung {
         title.innerHTML = recipes[index].title;
         recipeDiv.appendChild(title);
 
-        if (window.location.pathname == "/Pruefung/MeineRezepte.html") {
+        if (window.location.pathname == "/GIS-SoSe-2021/Pruefung/MeineRezepte.html") {
             let deleteRecipe: HTMLElement = document.createElement("button");
             deleteRecipe.id = "deleteRecipe";
             deleteRecipe.innerHTML = "X";
