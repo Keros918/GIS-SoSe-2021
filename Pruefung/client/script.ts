@@ -25,6 +25,7 @@ namespace Prüfung {
         window.location.assign("./index.html");
     }
     console.log(window.location.pathname);
+    console.log("test");
     switchSites();
 
     async function switchSites(): Promise<void> {
