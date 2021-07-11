@@ -1,7 +1,7 @@
 "use strict";
 var Prüfung;
 (function (Prüfung) {
-    let url = "//https://leonhaasgissose21.herokuapp.com/"; //https://leonhaasgissose21.herokuapp.com/      http://localhost:8100/
+    let url = "https://leonhaasgissose21.herokuapp.com/"; //https://leonhaasgissose21.herokuapp.com/      http://localhost:8100/
     let login = document.getElementById("login");
     let createAcc = document.getElementById("createAcc");
     login.addEventListener("click", function () { waitForResponse("login"); });

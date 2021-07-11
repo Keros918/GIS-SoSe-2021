@@ -1,6 +1,6 @@
 namespace Prüfung {
 
-    let url: string = "//https://leonhaasgissose21.herokuapp.com/";     //https://leonhaasgissose21.herokuapp.com/      http://localhost:8100/
+    let url: string = "https://leonhaasgissose21.herokuapp.com/";     //https://leonhaasgissose21.herokuapp.com/      http://localhost:8100/
 
     let login: HTMLElement = document.getElementById("login");
     let createAcc: HTMLElement = document.getElementById("createAcc");

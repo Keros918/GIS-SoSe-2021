@@ -1,7 +1,7 @@
 "use strict";
 var Prüfung;
 (function (Prüfung) {
-    let url = "//https://leonhaasgissose21.herokuapp.com/"; //https://leonhaasgissose21.herokuapp.com/      http://localhost:8100/
+    let url = "https://leonhaasgissose21.herokuapp.com/"; //https://leonhaasgissose21.herokuapp.com/      http://localhost:8100/
     let user = JSON.parse(sessionStorage.getItem("User"));
     let recipeStorage = JSON.parse(sessionStorage.getItem("Recipe"));
     let recipes;

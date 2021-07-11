@@ -15,7 +15,7 @@ namespace Prüfung {
         recipes?: string[];
     }
 
-    let url: string = "//https://leonhaasgissose21.herokuapp.com/";     //https://leonhaasgissose21.herokuapp.com/      http://localhost:8100/
+    let url: string = "https://leonhaasgissose21.herokuapp.com/";     //https://leonhaasgissose21.herokuapp.com/      http://localhost:8100/
 
     let user: Users = JSON.parse(sessionStorage.getItem("User"));
     let recipeStorage: Recipes = JSON.parse(sessionStorage.getItem("Recipe"));
